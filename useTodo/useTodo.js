@@ -26,7 +26,7 @@ export const useTodo = () => {
     dispatch(action);
   };
 
-  const changeToggleTodo = (id) => {
+  const toggleTodo = (id) => {
     dispatch({
       type: "[TODO] Status Todo",
       payload: id,
@@ -43,6 +43,6 @@ export const useTodo = () => {
     pendingTodos,
     addNewTodo,
     removeTodo,
-    changeToggleTodo,
+    toggleTodo,
   };
 };
